@@ -1,1 +1,27 @@
 hai philip
+
+welcome to gitkraken
+making change in file
+hello gitkraken
+
+<?php
+
+if(isset($_REQUEST['submit']))
+{
+	// echo "hello";
+    $name=$_REQUEST["rollno"];
+    $name1=$_REQUEST["sno"];
+
+    $date=date("Y/m/d");
+    date_default_timezone_set("Asia/Kolkata");
+    $asd=date('h:i:sa');
+	
+	$a="insert into allocation(stmid,sid,allocation_date,allocation_time,status) values('$name1','$name','$date','$asd','approved')";
+    mysqli_query($conn,$a);
+	echo $a;
+
+	echo "<script>alert(' Completed Successfully')</script>";
+}
+include("footer.html")
+
+?>
