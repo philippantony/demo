@@ -1,0 +1,10 @@
+import csv
+f = open("emp.csv",newline='')
+csvreader = csv.reader(f)
+print(next(csvreader))
+print(next(csvreader))
+print(next(csvreader))
+print(next(csvreader))
+print(next(csvreader))
+count = len(list(csvreader))
+print(count)
