@@ -1,0 +1,7 @@
+color1 = input("Enter Colors seperated by comma : ")
+color2 = input("Enter Colors seperated by comma : ")
+list1= color1.split(",")
+list2 = color2.split(",")
+set1 = set(list1)
+set2 = set(list2)
+print(set1.difference(set2))
